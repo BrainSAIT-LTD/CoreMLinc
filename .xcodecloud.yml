@@ -1,0 +1,15 @@
+schemes:
+  - CoreMLDemo
+  - CoreMLDemoTests
+
+triggers:
+  - type: commit
+    branchPatterns:
+      - "main"
+
+builds:
+  - platform: macOS
+    configuration: debug
+    actions:
+      - build
+      - test

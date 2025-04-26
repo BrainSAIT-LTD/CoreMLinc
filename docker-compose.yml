@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  coreml-demo:
+    build: .
+    volumes:
+      - ./Models:/app/Models
+      - ./data:/app/data
+    environment:
+      - SWIFT_ENV=production
+    command: ["process-pdf", "--mode", "all", "/app/data/input.pdf"]  # Default command, can be overridden
