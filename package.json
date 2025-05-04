@@ -1,5 +1,4 @@
 {
-  ...
   "scripts": {
     "build": "next build",
     "lint": "eslint ./src",
